@@ -49,6 +49,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.webBrowserVoorbeeld = new System.Windows.Forms.WebBrowser();
             this.label7 = new System.Windows.Forms.Label();
+            this.nieuwToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.opslaanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,6 +78,8 @@
             // bestandToolStripMenuItem
             // 
             this.bestandToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nieuwToolStripMenuItem,
+            this.opslaanToolStripMenuItem,
             this.aflsuitenToolStripMenuItem});
             this.bestandToolStripMenuItem.Name = "bestandToolStripMenuItem";
             this.bestandToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
@@ -108,6 +112,7 @@
             this.overToolStripMenuItem.Name = "overToolStripMenuItem";
             this.overToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
             this.overToolStripMenuItem.Text = "Over Afbeeldingscode generator";
+            this.overToolStripMenuItem.Click += new System.EventHandler(this.overToolStripMenuItem_Click);
             // 
             // txtAfbeeldingslocatie
             // 
@@ -225,6 +230,19 @@
             this.label7.TabIndex = 14;
             this.label7.Text = "* = verplicht";
             // 
+            // nieuwToolStripMenuItem
+            // 
+            this.nieuwToolStripMenuItem.Name = "nieuwToolStripMenuItem";
+            this.nieuwToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.nieuwToolStripMenuItem.Text = "&Nieuw";
+            this.nieuwToolStripMenuItem.Click += new System.EventHandler(this.nieuwToolStripMenuItem_Click);
+            // 
+            // opslaanToolStripMenuItem
+            // 
+            this.opslaanToolStripMenuItem.Name = "opslaanToolStripMenuItem";
+            this.opslaanToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.opslaanToolStripMenuItem.Text = "Op&slaan";
+            // 
             // AfbeeldingscodeGeneratorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -278,6 +296,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.WebBrowser webBrowserVoorbeeld;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ToolStripMenuItem nieuwToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem opslaanToolStripMenuItem;
     }
 }
 

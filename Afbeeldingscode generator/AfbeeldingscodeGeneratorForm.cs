@@ -18,9 +18,9 @@ namespace Afbeeldingscode_generator
 
         private void btnMaakCode_Click(object sender, EventArgs e)
         {
-            string afbeeldingslocatie = Convert.ToString(txtAfbeeldingslocatie.Text);
-            string omschrijving = Convert.ToString(txtOmschrijving.Text);
-            string hyperlink = Convert.ToString(txtHyperlink.Text);
+            string afbeeldingslocatie = txtAfbeeldingslocatie.Text;
+            string omschrijving = txtOmschrijving.Text;
+            string hyperlink = txtHyperlink.Text;
             string resultaat;
             string resultaat2;
 
@@ -28,7 +28,7 @@ namespace Afbeeldingscode_generator
             hyperlink, afbeeldingslocatie, omschrijving);
             txtTeKopierenHTMLCode.Text = resultaat;
 
-            resultaat2 = String.Format("<a href='{0}'><img src='{1}' title=''></a>", hyperlink, afbeeldingslocatie, omschrijving);
+            resultaat2 = String.Format("<a href='{0}'><img src='{1}' title='{2}'></a>", hyperlink, afbeeldingslocatie, omschrijving);
             txtVoorbeeldHTMLCode.Text = resultaat2;
         }
 
@@ -40,6 +40,23 @@ namespace Afbeeldingscode_generator
         private void aflsuitenToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void nieuwToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            txtAfbeeldingslocatie.Text = "";
+            txtOmschrijving.Text = "";
+            txtHyperlink.Text = "";
+            txtTeKopierenHTMLCode.Text = "";
+            txtVoorbeeldHTMLCode.Text = "";
+            txtAfbeeldingslocatie.Focus();
+
+        }
+
+        private void overToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AboutBox1 over = new AboutBox1();
+            over.ShowDialog();
         }
     }
 }
