@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Afbeeldingscode generator")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Met dit programma maak je de HTML-code (in code) die je nodig hebt als CO om op de geocachelisting te plaatsen.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("RH-Design")]
 [assembly: AssemblyProduct("Afbeeldingscode generator")]
 [assembly: AssemblyCopyright("Copyright ©  2013")]
 [assembly: AssemblyTrademark("")]
