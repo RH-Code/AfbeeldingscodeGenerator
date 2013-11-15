@@ -113,21 +113,21 @@
             // nieuwToolStripMenuItem
             // 
             this.nieuwToolStripMenuItem.Name = "nieuwToolStripMenuItem";
-            this.nieuwToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.nieuwToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.nieuwToolStripMenuItem.Text = "&Nieuw";
             this.nieuwToolStripMenuItem.Click += new System.EventHandler(this.nieuwToolStripMenuItem_Click);
             // 
             // opslaanToolStripMenuItem
             // 
             this.opslaanToolStripMenuItem.Name = "opslaanToolStripMenuItem";
-            this.opslaanToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.opslaanToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.opslaanToolStripMenuItem.Text = "Op&slaan";
             this.opslaanToolStripMenuItem.Click += new System.EventHandler(this.opslaanToolStripMenuItem_Click);
             // 
             // aflsuitenToolStripMenuItem
             // 
             this.aflsuitenToolStripMenuItem.Name = "aflsuitenToolStripMenuItem";
-            this.aflsuitenToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aflsuitenToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.aflsuitenToolStripMenuItem.Text = "&Aflsuiten";
             this.aflsuitenToolStripMenuItem.Click += new System.EventHandler(this.aflsuitenToolStripMenuItem_Click);
             // 
@@ -145,6 +145,7 @@
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
             this.helpToolStripMenuItem.Text = "Help";
+            this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 
             // overToolStripMenuItem
             // 

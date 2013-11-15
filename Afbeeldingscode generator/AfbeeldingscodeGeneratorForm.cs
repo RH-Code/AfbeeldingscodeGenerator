@@ -125,6 +125,12 @@ namespace Afbeeldingscode_generator
             }
         }
 
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "Help.chm");
+            
+        }
+
 
     }
 }
