@@ -63,6 +63,16 @@ namespace Afbeeldingscode_generator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AfbeeldingscodeGeneratorLogo {
+            get {
+                object obj = ResourceManager.GetObject("AfbeeldingscodeGeneratorLogo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap geologo {
             get {
                 object obj = ResourceManager.GetObject("geologo", resourceCulture);
