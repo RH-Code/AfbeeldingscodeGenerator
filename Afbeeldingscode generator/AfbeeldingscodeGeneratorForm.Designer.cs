@@ -36,8 +36,14 @@
             this.nieuwToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.opslaanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aflsuitenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.talenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nederlandsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.engelsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fransToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.duitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.f1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.controleerOpUpdatesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.overToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.txtAfbeeldingslocatie = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -61,22 +67,27 @@
             this.txtRand = new System.Windows.Forms.TextBox();
             this.checkBoxCentreren = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblKleur = new System.Windows.Forms.Label();
+            this.KleurRand = new System.Windows.Forms.Button();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -93,6 +104,7 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bestandToolStripMenuItem,
+            this.talenToolStripMenuItem,
             this.f1ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -131,10 +143,50 @@
             this.aflsuitenToolStripMenuItem.Text = "&Aflsuiten";
             this.aflsuitenToolStripMenuItem.Click += new System.EventHandler(this.aflsuitenToolStripMenuItem_Click);
             // 
+            // talenToolStripMenuItem
+            // 
+            this.talenToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nederlandsToolStripMenuItem,
+            this.engelsToolStripMenuItem,
+            this.fransToolStripMenuItem,
+            this.duitsToolStripMenuItem});
+            this.talenToolStripMenuItem.Name = "talenToolStripMenuItem";
+            this.talenToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
+            this.talenToolStripMenuItem.Text = "Talen";
+            // 
+            // nederlandsToolStripMenuItem
+            // 
+            this.nederlandsToolStripMenuItem.Name = "nederlandsToolStripMenuItem";
+            this.nederlandsToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.nederlandsToolStripMenuItem.Text = "Nederlands";
+            this.nederlandsToolStripMenuItem.Click += new System.EventHandler(this.nederlandsToolStripMenuItem_Click);
+            // 
+            // engelsToolStripMenuItem
+            // 
+            this.engelsToolStripMenuItem.Name = "engelsToolStripMenuItem";
+            this.engelsToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.engelsToolStripMenuItem.Text = "Engels";
+            this.engelsToolStripMenuItem.Click += new System.EventHandler(this.engelsToolStripMenuItem_Click);
+            // 
+            // fransToolStripMenuItem
+            // 
+            this.fransToolStripMenuItem.Name = "fransToolStripMenuItem";
+            this.fransToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.fransToolStripMenuItem.Text = "Frans";
+            this.fransToolStripMenuItem.Click += new System.EventHandler(this.fransToolStripMenuItem_Click);
+            // 
+            // duitsToolStripMenuItem
+            // 
+            this.duitsToolStripMenuItem.Name = "duitsToolStripMenuItem";
+            this.duitsToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.duitsToolStripMenuItem.Text = "Duits";
+            this.duitsToolStripMenuItem.Click += new System.EventHandler(this.duitsToolStripMenuItem_Click);
+            // 
             // f1ToolStripMenuItem
             // 
             this.f1ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.helpToolStripMenuItem,
+            this.controleerOpUpdatesToolStripMenuItem,
             this.overToolStripMenuItem});
             this.f1ToolStripMenuItem.Name = "f1ToolStripMenuItem";
             this.f1ToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
@@ -146,6 +198,13 @@
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
             this.helpToolStripMenuItem.Text = "Help";
             this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
+            // 
+            // controleerOpUpdatesToolStripMenuItem
+            // 
+            this.controleerOpUpdatesToolStripMenuItem.Name = "controleerOpUpdatesToolStripMenuItem";
+            this.controleerOpUpdatesToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
+            this.controleerOpUpdatesToolStripMenuItem.Text = "Controleer op updates";
+            this.controleerOpUpdatesToolStripMenuItem.Click += new System.EventHandler(this.controleerOpUpdatesToolStripMenuItem_Click);
             // 
             // overToolStripMenuItem
             // 
@@ -349,6 +408,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.lblKleur);
+            this.groupBox1.Controls.Add(this.KleurRand);
             this.groupBox1.Controls.Add(this.pictureBox6);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.checkBoxCentreren);
@@ -360,10 +421,102 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(468, 42);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(258, 132);
+            this.groupBox1.Size = new System.Drawing.Size(318, 132);
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Opmaak (afm. in px)";
+            // 
+            // lblKleur
+            // 
+            this.lblKleur.AutoSize = true;
+            this.lblKleur.Location = new System.Drawing.Point(254, 104);
+            this.lblKleur.Name = "lblKleur";
+            this.lblKleur.Size = new System.Drawing.Size(48, 13);
+            this.lblKleur.TabIndex = 31;
+            this.lblKleur.Text = "label10";
+            this.lblKleur.Visible = false;
+            // 
+            // KleurRand
+            // 
+            this.KleurRand.Location = new System.Drawing.Point(248, 76);
+            this.KleurRand.Name = "KleurRand";
+            this.KleurRand.Size = new System.Drawing.Size(64, 20);
+            this.KleurRand.TabIndex = 32;
+            this.KleurRand.Text = "Kleur";
+            this.KleurRand.UseVisualStyleBackColor = true;
+            this.KleurRand.Click += new System.EventHandler(this.KleurRand_Click);
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackgroundImage = global::Afbeeldingscode_generator.Properties.Resources.question_mark_icon;
+            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox6.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.InitialImage")));
+            this.pictureBox6.Location = new System.Drawing.Point(296, 0);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(16, 15);
+            this.pictureBox6.TabIndex = 31;
+            this.pictureBox6.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox6, "Breedte, hoogte, rand, centreren van de afbeelding");
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackgroundImage = global::Afbeeldingscode_generator.Properties.Resources.question_mark_icon;
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox5.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.InitialImage")));
+            this.pictureBox5.Location = new System.Drawing.Point(472, 199);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(16, 15);
+            this.pictureBox5.TabIndex = 30;
+            this.pictureBox5.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox5, "Openen in nieuw venster/tabblad wanneer op de afbeelding wordt geklikt");
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImage = global::Afbeeldingscode_generator.Properties.Resources.question_mark_icon;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox4.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.InitialImage")));
+            this.pictureBox4.Location = new System.Drawing.Point(424, 289);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(16, 15);
+            this.pictureBox4.TabIndex = 29;
+            this.pictureBox4.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox4, "Code van de HTML-code: dient gekopieerd om in de listing te plaatsen");
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImage = global::Afbeeldingscode_generator.Properties.Resources.question_mark_icon;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox3.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.InitialImage")));
+            this.pictureBox3.Location = new System.Drawing.Point(424, 158);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(16, 15);
+            this.pictureBox3.TabIndex = 28;
+            this.pictureBox3.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox3, "Link naar de pagina die moet openen als er op de afbeelding geklikt wordt");
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = global::Afbeeldingscode_generator.Properties.Resources.question_mark_icon;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.InitialImage")));
+            this.pictureBox2.Location = new System.Drawing.Point(424, 99);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(16, 15);
+            this.pictureBox2.TabIndex = 27;
+            this.pictureBox2.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox2, "Omschrijving van de afbeelding, bijvoorbeeld: NaamCache");
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::Afbeeldingscode_generator.Properties.Resources.question_mark_icon;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(424, 40);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(16, 15);
+            this.pictureBox1.TabIndex = 26;
+            this.pictureBox1.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox1, "Link naar de afbeelding (http://.....)");
             // 
             // saveFileDialog1
             // 
@@ -373,84 +526,23 @@
             this.saveFileDialog1.FileName = "Text File | *.txt";
             this.saveFileDialog1.Filter = "Text File | *.txt";
             // 
-            // pictureBox5
+            // pictureBox7
             // 
-            this.pictureBox5.BackgroundImage = global::Afbeeldingscode_generator.Properties.Resources.question_mark_icon;
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox5.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.InitialImage")));
-            this.pictureBox5.Location = new System.Drawing.Point(700, 180);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(16, 15);
-            this.pictureBox5.TabIndex = 30;
-            this.pictureBox5.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox5, "Optioneel: Vink dit aan om de link te laten openen op een nieuwe pagina");
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackgroundImage = global::Afbeeldingscode_generator.Properties.Resources.question_mark_icon;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox4.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.InitialImage")));
-            this.pictureBox4.Location = new System.Drawing.Point(168, 291);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(16, 15);
-            this.pictureBox4.TabIndex = 29;
-            this.pictureBox4.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox4, "html-code om de html-code voor de afbeelding te laten zien");
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImage = global::Afbeeldingscode_generator.Properties.Resources.question_mark_icon;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox3.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.InitialImage")));
-            this.pictureBox3.Location = new System.Drawing.Point(83, 160);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(16, 15);
-            this.pictureBox3.TabIndex = 28;
-            this.pictureBox3.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox3, "Optioneel: Link naar de pagina die moet openen als er op de afbeelding geklikt wo" +
-                    "rdt");
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = global::Afbeeldingscode_generator.Properties.Resources.question_mark_icon;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.InitialImage")));
-            this.pictureBox2.Location = new System.Drawing.Point(107, 101);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(16, 15);
-            this.pictureBox2.TabIndex = 27;
-            this.pictureBox2.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox2, "Omschrijving van de afbeelding, bijvoorbeeld: De geocache");
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::Afbeeldingscode_generator.Properties.Resources.question_mark_icon;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(144, 42);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(16, 15);
-            this.pictureBox1.TabIndex = 26;
-            this.pictureBox1.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox1, "Link naar de afbeelding (http://.....)");
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackgroundImage = global::Afbeeldingscode_generator.Properties.Resources.question_mark_icon;
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox6.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.InitialImage")));
-            this.pictureBox6.Location = new System.Drawing.Point(129, 0);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(16, 15);
-            this.pictureBox6.TabIndex = 31;
-            this.pictureBox6.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox6, resources.GetString("pictureBox6.ToolTip"));
+            this.pictureBox7.BackgroundImage = global::Afbeeldingscode_generator.Properties.Resources.AfbeeldingscodeGeneratorLogo;
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox7.Location = new System.Drawing.Point(792, 42);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(168, 214);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 31;
+            this.pictureBox7.TabStop = false;
             // 
             // AfbeeldingscodeGeneratorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(988, 555);
+            this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
@@ -476,18 +568,19 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "AfbeeldingscodeGeneratorForm";
-            this.Text = "Afbeeldingscode generator";
+            this.Text = "Afbeeldingscode generator 1.3.0";
             this.Load += new System.EventHandler(this.AfbeeldingscodeGeneratorForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -534,6 +627,16 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.ToolStripMenuItem talenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem engelsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fransToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem duitsToolStripMenuItem;
+        private System.Windows.Forms.Button KleurRand;
+        private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.Label lblKleur;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.ToolStripMenuItem controleerOpUpdatesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nederlandsToolStripMenuItem;
     }
 }
 

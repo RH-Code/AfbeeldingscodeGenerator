@@ -2797,15 +2797,6 @@
   <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>132, 17</value>
   </metadata>
-  <data name="pictureBox6.ToolTip" xml:space="preserve">
-    <value>Optioneel: Breedte van de afbeelding in pixels
-Optioneel: Hoogte van de afbeelding in pixels
-Optioneel: Dikte van de rand om de afbeelding in pixels
-Optioneel: Vink dit aan om de afbeelding te centreren</value>
-  </data>
-  <metadata name="saveFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>229, 17</value>
-  </metadata>
   <data name="pictureBox5.InitialImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAyAAAAMgCAYAAADbcAZoAAAABGdBTUEAALGPC/xhBQAA/8dJREFUeF7s
@@ -16171,6 +16162,12 @@ Optioneel: Vink dit aan om de afbeelding te centreren</value>
         nerv2z4L+jmJzw6Vi7qCYUtGq6LRqmz0snCk0pEmTZoezP/4H/8/wg45nqiWh2UAAAAASUVORK5CYII=
 </value>
   </data>
+  <metadata name="saveFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>229, 17</value>
+  </metadata>
+  <metadata name="colorDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>365, 17</value>
+  </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABMLAAATCwAAAAAAAAAA
