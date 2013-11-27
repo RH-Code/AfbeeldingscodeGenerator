@@ -91,9 +91,6 @@
             // 
             // menuStrip1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bestandToolStripMenuItem,
-            this.f1ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(988, 24);
@@ -408,7 +405,7 @@
             this.pictureBox3.TabIndex = 28;
             this.pictureBox3.TabStop = false;
             this.toolTip1.SetToolTip(this.pictureBox3, "Optioneel: Link naar de pagina die moet openen als er op de afbeelding geklikt wo" +
-                    "rdt");
+        "rdt");
             // 
             // pictureBox2
             // 
